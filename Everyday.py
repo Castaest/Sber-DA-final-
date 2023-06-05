@@ -192,7 +192,7 @@ result = xr.predict(dx)
 with open('C:\\Users\\aab\\Documents\\Salary_bounds.dat', 'rb') as fp:
     salary_min, salary_max = pkl.load(fp)
     
-df['salary_pred_norm'] = result.tolist()
+df['salary_pred_norm'] = result.data[:, 0]
 df['salary'] = df['salary_pred_norm'].apply(lambda x: 0 if x < 0 else round(x * (salary_max - salary_min) + salary_min), 0)
 
 df['salary_diff'] = df['salary_mid'] - df['salary']
