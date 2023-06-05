@@ -6,3 +6,5 @@ DA_School_Main: loading, wrangling, exploring data. Testing and saving three mod
 Everyday.py: downloading fresh vacancies from hh.ru API
 
 Everyday.bat: batch file for Windows Task Manager
+
+PDF_TEST.pdf: output file example
